@@ -17,4 +17,9 @@ One way to detect distribution drift is to track the model's performance on the 
 
 ## Evaluation Metrics
 
-$\frac{# correct predictions}{# total observations}$
+### Accuracy
+$\text{Accuracy} = \frac{\text{No. of correct predictions}}{\text{Total observations}}$
+
+Accuracy makes no distinction between classes; correct answers for class 0 and class 1 are treated equally. A *confusion matrix* shows a more detailed breakdown of correct and incorrect classifications for each class.
+
+### Per-Class accuracy
