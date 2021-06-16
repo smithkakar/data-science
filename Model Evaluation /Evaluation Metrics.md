@@ -29,5 +29,18 @@ Accuracy is known as a micro-averagem average per-class accuracy is a macro-aver
 
 ### Log-Loss
 
+If the raw output of the classifier is a numeric probability instead of a class label 0 or 1, then log-loss can be used.
+
+Mathematically, log-loss for a binary classifier looks like:
 
 <img src="https://render.githubusercontent.com/render/math?math=\text{Log-loss} = -\frac{1}{N}\sum_{i=1}^{N} y_{i} log p_{i} %2B (1-y_{i})log(1-p_{i})">
+
+This is linked to information theory: log-loss is the cross entropy between the distribution of the true labels and the predictions, and is very closely related to relative entropy.
+
+Entropy measures the unpredictability of something. Cross entropy incorporates the entropy of the true distribution. So log-loss is an information-theoretic measure to gauge the "extra noise" that comes from using a predictor as opposed to the true labels. By minimizing the cross entropy, we maximize the accuracy of a classifier.
+
+### AUC
+
+AUC is area under the receiver operating characteristic (ROC) curve. It is one way to summarize the ROC curve into a single number, so that it can be compared easily.
+
+The marketing analytics community uses lift and gain charts as variations. The medical modeling community often looks at odds ratios. The statistics community examines sensitivity and specificity.
