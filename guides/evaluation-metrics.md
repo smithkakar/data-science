@@ -25,7 +25,7 @@ Accuracy makes no distinction between classes; correct answers for class 0 and c
 
 ### Per-Class Accuracy
 
-Accuracy is known as a micro-averagem average per-class accuracy is a macro-average. When the classes are imbalanced, we should look at the average as well as the individual per-class accuracy.
+Accuracy is known as a micro-average and average per-class accuracy is a macro-average. When the classes are imbalanced, we should look at the average as well as the individual per-class accuracy.
 
 ### Log-Loss
 
