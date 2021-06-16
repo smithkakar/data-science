@@ -19,10 +19,15 @@ One way to detect distribution drift is to track the model's performance on the 
 
 ### Accuracy
 
-$\text{Accuracy} = \frac{\text{No. of correct predictions}}{\text{Total observations}}$
-
 <img src="https://render.githubusercontent.com/render/math?math=\text{Accuracy} = \frac{\text{No. of correct predictions}}{\text{Total observations}}">
 
 Accuracy makes no distinction between classes; correct answers for class 0 and class 1 are treated equally. A *confusion matrix* shows a more detailed breakdown of correct and incorrect classifications for each class.
 
-### Per-Class accuracy
+### Per-Class Accuracy
+
+Accuracy is known as a micro-averagem average per-class accuracy is a macro-average. When the classes are imbalanced, we should look at the average as well as the individual per-class accuracy.
+
+### Log-Loss
+
+
+<img src="https://render.githubusercontent.com/render/math?math=\text{Log-loss} = -\frac{1}{N}\sum_{i=1}^{N} y_{i} log p_{i} %2B (1-y_{i})log(1-p_{i})">
